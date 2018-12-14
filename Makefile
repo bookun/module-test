@@ -6,3 +6,7 @@ build:
 .PHONY: rm
 rm:
 	docker rm module_sample
+
+.PHONY: rmi
+rmi:
+	docker rmi alpine_go

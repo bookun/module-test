@@ -10,5 +10,4 @@ RUN apt-get install -y wget
 RUN wget https://dl.google.com/go/go1.11.3.linux-amd64.tar.gz
 RUN tar -C /usr/local -xzf go1.11.3.linux-amd64.tar.gz
 ENV PATH=$PATH:/usr/local/go/bin
-
-ENV GO111MODULE=on
+RUN apt-get install -y gcc
